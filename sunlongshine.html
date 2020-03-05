@@ -8,190 +8,215 @@
 
     <style>
 
+
+        body{
+            line-height: 1.5;
+            font-size:18px;
+            background-color:maroon;
+            
+        }
+
         .container{      
             text-align: center;
-            width: 1024px;    
-            background-color:yellow;
-            line-height: 1.5;
-            margin:auto;
+            max-width: 1024px;    
+            background-color: moccasin;
+            margin:auto;           
+            padding:0px 20px;
         }
 
-        h1{font-size: 36px;font-weight: bold;}
-        h2{font-size: 24px;}
+        h1{font-size: 48px;font-weight: bold;}
+        h2{font-size: 36px;font-weight: bold;padding: 20px 0 10px 0;}
 
-        .header{
-            /* background-color: black; */
-            color:white;
-            
-            background-image: url(temp.jpg);
-            background-attachment: fixed;
-            /* background-position: center; */
-            height: 200px;
-            margin:0px 0px 10px;
+        .header{    
+            display:flex;
+            background-image: url(head_background/header_background.jpg);
+            width:100%;
         }
-
-        .header img{
-            opacity: .5;
-            float: left;
-            width: 100%;
-            min-height: 100%;
-     
+        .header .pic{
+            position: relative;
+            left:2.5%;
         }
-
-        .image_wrap{
-            /* max-width: 1024x; */
+       
+        .header .txt {
+            margin-right:0px;
+            font-size:24px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-           
+            text-align:left;
+            font-weight: bold;
+            position: relative;      
+            left:30%;
+        }
+
+        .header .txt img{
+            position: absolute;
+            left:55%;
+            top:55%;
+            width:30%;
+        
+        }
+
+        .image_wrap{      
+            display: flex;
+            /* justify-content: center; */
+            margin: 0px 10px ;
         }
 
         .image_item img{
             width:  100%;
+
+        }
+
+        .image_item{
             margin: 0px 2px;
-            /* flex:auto; */
+        }
+
+        figcaption{
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        ul li{
+          display: inline-block;
+            padding:0 10px;
         }
 
 
         .footer{
-
             background-color: black;
-            color:white;         
-            padding :10px 0px;
+            color:#888;
+            text-align: center;
+            padding: 5px 0px;
+            width: 100%;
+            
         }
+
+        .product_list{
+            margin-top: 20px;
+        }
+
+
     </style>
 
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            
-            <h1>盛隆軒企業有限公司</h1>
-            <h2>SUN LONG SHINE ENTERPRISE CO., LTD</h2>
-            <p>
-                20年老牌專金屬書籤、美勞畫板，價格公道、品質優、交期準、包裝細緻
-                金屬書籤、純銅拋光書籤、高剛性不銹鋼書籤、彩色印刷XX、金屬烤漆仿古XX、鍍金XX、鍍銀XX
-                美勞金屬畫板、純銅拋光畫板、不銹鋼畫板、烤漆畫板
-            </p>
-            <!-- <img src="https://picsum.photos/200/300/?random6" alt=""> -->
-            
-            <div class="clear_fix"></div>
+    <div class="header">    
+        <div class="head_col pic">
+            <img src="company_logo.png" alt="" style="max-width:512px">
         </div>
-    </div>
-
-    <div class="container">
-        <div class="image_wrap">
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random4" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random4" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random4" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random4" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random4" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random4" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>    
-        </div>     
-
-        <div class="image_wrap">
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random3" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random3" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random3" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random3" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random3" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-        </div>     
-
-        <div class="image_wrap">
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random2" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random2" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random2" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random2" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-        </div>     
-        <div class="image_wrap">
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random1" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random1" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random1" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-           
-        </div>     
-
-        <div class="image_wrap">
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random5" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-            <div class="image_item">
-                <img src="https://picsum.photos/200/300/?random5" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, maxime?</p>
-            </div>
-           
-        </div>   
-
-
-    </div>
-
-    <div class="container">
-        <div class="footer">
-            <h2>盛隆軒企業有限公司</h2>
+        <div class="head_col txt">
             <p>地址：台北市南京東路4段197號8樓-3</p>
             <p>工廠：台南縣西港鄉溪埔寮27-1號</p>
-            <p>聯絡電話：(02)25468655 傳真：(02)27177964</p>
-            <p>Email：sls@aptg.net</p>
-            <p>lineID：jackyang98</p>
+            <p>網址：http://www.sls.mymailer.com.tw/</p>
+            <p>電話：(02)2546 8655(代表)</p>
+            <p>傳真：(02)2717 7964</p>         
+            <p>Email：sls@aptg.net</p>            
+            <p>lineID：jackyang98</p>             
+            <img src="lineid.png" alt="">  
         </div>
-  
     </div>
+
+    <div class="container">
+
+        <div class="about">
+
+            <div class="company">
+                <h2>關於我們</h2>
+                20年台灣老牌專業工廠，專業製作各式金屬書籖及美勞金屬畫板。我們始終堅持在台灣生產製造。為了提升競爭力，我們不惜耗費鉅資，引進新的生產設備。不僅大量降低人工成本與不良率，同時提升了報價競爭力及品質的穩定度
+            </div>
+
+            <div class="value">
+                <h2>核心理念</h2>   
+                <ul style="list-style-type:disc;">
+                    <li>1)合理且誠信的報價</li>
+                    <li>2)物超所值的品質</li>
+                    <li>3)訓練有素的員工提供精美的包裝</li>       
+                    <li>4)準時出貨</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <h2>產品種類</h2>
+                <p>
+                    曾經生產過的紀念性金屬書籖包括:美國讀者文摘 · 花旗銀行 · 故宮博物院 · 台北市立美術館 · 古根漢 · 台灣大學 · 趨勢科技 · 政治大學 · 法鼓山 ·日本関西大學 · 行政院食安中心 · AUDI ·  中正預校 · BMW  · 耶穌愛你 · 士林官邸菊展 · 孔廟 · 觀光局 · 台北世大運 · 鐵路局永保安康…等。
+                    歡迎禮贈品商洽詢，歡迎舊雨新知不吝指教並來稿製做
+                </p>
+                <p>
+                    純銅原色拋光書籤· 高剛性不鏽鋼原色拋光書籤· 金屬烤漆仿古書籤· 彩色印刷書籖· 電鍍金書籤· 電鍍銀書籤
+                </p>          
+            </div>
+             
+        </div>
+        
+        <div class="product_list">
+            <div class="image_wrap">
+                <div class="image_item">
+                    <img src="20191213_1/rec/20191213 _1_200301_0001.jpg" alt="">
+                    <figcaption></figcaption>
+                    <p></p>
+                </div>
+                <div class="image_item">
+                    <img src="www.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="qqq.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="www.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="qqq.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="www.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+            </div>
+            <div class="image_wrap">
+                <div class="image_item">
+                    <img src="111.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
     
+                <div class="image_item">
+                    <img src="222.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="222.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="222.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="222.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+                <div class="image_item">
+                    <img src="222.jpg" alt="">
+                    <figcaption></figcaption>
+                </div>
+              
+            </div>
+            
+        </div>
+        
+        
+
+    </div>
+
+    <div class="footer">
+        圖片產品皆為客户委製，未經許可不得仿製 &copy;copyright 2020 by SUN LONG SHINE
+    </div>
 
 </body>
 </html>
